@@ -45,6 +45,7 @@ public class DoctorController {
     }
 
     //delete doctor
+    //using id
     @DeleteMapping("/delete/{id}")
     public String delete(@PathVariable int id){
         doctorMap.remove(id);
