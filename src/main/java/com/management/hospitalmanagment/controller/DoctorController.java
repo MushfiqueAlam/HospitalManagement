@@ -32,7 +32,7 @@ public class DoctorController {
         return doctorMap;
     }
 
-    //update doctor
+    //update doctor using id
     @PutMapping("/update/{id}")
     public String update(@PathVariable int id , @RequestBody Doctor doctor){
         Doctor doctor1=doctorMap.get(id);
